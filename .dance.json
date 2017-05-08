@@ -1,0 +1,25 @@
+{
+    "title": "Standard PHP package skeleton.",
+    "description": "Creates an Standard PHP package skeleton.\n\nNote: Licensed ending with \"+\" means higher inclusive",
+    "questioners": [
+        "SkeletonDancer\\Questioner\\ProjectQuestioner",
+        "SkeletonDancer\\Questioner\\LicenseQuestioner",
+        "SkeletonDancer\\Questioner\\AuthorQuestioner",
+        "SkeletonDancer\\Questioner\\ComposerPackageNameQuestioner",
+        "SkeletonDancer\\Questioner\\PhpNamespaceQuestioner"
+    ],
+    "generators": [
+        "SkeletonDancer\\Generator\\GitInitGenerator",
+        "SkeletonDancer\\Generator\\LicenseGenerator",
+        "SkeletonDancer\\Dance\\Pds\\Generator\\DirectoryStructureGenerator",
+        "SkeletonDancer\\Dance\\Pds\\Generator\\GitConfigGenerator",
+        "SkeletonDancer\\Dance\\Pds\\Generator\\ComposerGenerator",
+        "SkeletonDancer\\Dance\\Pds\\Generator\\ReadMeGenerator",
+        "SkeletonDancer\\Dance\\Pds\\Generator\\ChangelogGenerator"
+    ],
+    "autoloading": {
+        "psr-4": {
+            "SkeletonDancer\\Dance\\Pds\\": "src"
+        }
+    }
+}
